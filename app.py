@@ -39,7 +39,7 @@ venue = ['Wankhede Stadium, Mumbai',
         'Diamond Oval, Kimberley', 
         'Mangaung Oval, Bloemfontein']
 
-pipe = pickle.load(open('pipe.pkl', 'rb'))
+pipe = pickle.load(open('/pipe.pkl', 'rb'))
 
 
 col1,col2 = st.columns(2)
