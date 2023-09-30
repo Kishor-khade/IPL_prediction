@@ -1,6 +1,7 @@
 import pandas as pd
 import streamlit as st
 import pickle
+import os
 
 st.title('IPL win predictor')
 
@@ -39,8 +40,7 @@ venue = ['Wankhede Stadium, Mumbai',
         'Diamond Oval, Kimberley', 
         'Mangaung Oval, Bloemfontein']
 
-pipe = pickle.load(open('/pipe.pkl', 'rb'))
-
+pipe = pickle.load(open(os.getcwd()+'/pipe.pkl', 'rb'))
 
 col1,col2 = st.columns(2)
 
